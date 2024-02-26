@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Aula());
+void main() => runApp(const Aula());
 
-class Aula extends StatelessWidget{
-  Widget build(BuildContext context){
+class Aula extends StatelessWidget {
+  const Aula({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
-    theme: ThemeData(
-        appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.red,
-      foregroundColor: Colors.white,
-    )),
-    home: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Aula 1",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            "Aula 1",
+          ),
+        ),
+        body: const Text(
+          'Aula 1',
         ),
       ),
-      body: const Text(
-        'Aula 1',
-      ),
-    ),
-  );
+    );
   }
-} 
+}
