@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Aula3());
+  runApp(const Aula3());
 }
 
 class Aula3 extends StatelessWidget {
+  const Aula3({super.key});
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
