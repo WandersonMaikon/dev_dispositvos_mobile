@@ -73,7 +73,7 @@ class _MeuApp extends State<MeuApp> {
                 labelText: 'Informe o nome',
               ),
               onChanged: (text) {
-                setState(() {
+        
                 texto = text;
                 });
               },
